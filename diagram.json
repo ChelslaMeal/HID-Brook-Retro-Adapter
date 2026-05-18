@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "author": "Gabriel Grieco",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-pi-pico", "id": "pico", "top": 0, "left": 0, "attrs": {} },
+    {
+      "type": "board-ssd1306",
+      "id": "oled1",
+      "top": -198.46,
+      "left": -18.97,
+      "attrs": { "i2cAddress": "0x3c" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn1",
+      "top": 54.2,
+      "left": -201.6,
+      "attrs": { "color": "green", "xray": "1" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn2",
+      "top": -13,
+      "left": -163.2,
+      "attrs": { "color": "green", "xray": "1" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn3",
+      "top": -61,
+      "left": -163.2,
+      "attrs": { "color": "green", "xray": "1" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn4",
+      "top": -109,
+      "left": -163.2,
+      "attrs": { "color": "green", "xray": "1" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn5",
+      "top": -157,
+      "left": -163.2,
+      "attrs": { "color": "green", "xray": "1" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn6",
+      "top": -13,
+      "left": -240,
+      "attrs": { "color": "green", "xray": "1" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn7",
+      "top": -61,
+      "left": -240,
+      "attrs": { "color": "green", "xray": "1" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn8",
+      "top": 102.2,
+      "left": -201.6,
+      "attrs": { "color": "green", "xray": "1" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn9",
+      "top": -109,
+      "left": -240,
+      "attrs": { "color": "green", "xray": "1" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn10",
+      "top": -157,
+      "left": -240,
+      "attrs": { "color": "green", "xray": "1" }
+    },
+    {
+      "type": "wokwi-pushbutton-6mm",
+      "id": "btn11",
+      "top": -347.8,
+      "left": -182.4,
+      "attrs": { "color": "green", "xray": "1" }
+    },
+    {
+      "type": "wokwi-pushbutton-6mm",
+      "id": "btn12",
+      "top": -290.2,
+      "left": -240,
+      "attrs": { "color": "green", "xray": "1" }
+    },
+    {
+      "type": "wokwi-pushbutton-6mm",
+      "id": "btn13",
+      "top": -232.6,
+      "left": -182.4,
+      "attrs": { "color": "green", "xray": "1" }
+    },
+    {
+      "type": "wokwi-pushbutton-6mm",
+      "id": "btn14",
+      "top": -290.2,
+      "left": -124.8,
+      "attrs": { "color": "green", "xray": "1" }
+    },
+    { "type": "wokwi-slide-switch", "id": "sw1", "top": -427.6, "left": 195.1, "attrs": {} },
+    {
+      "type": "wokwi-pushbutton-6mm",
+      "id": "btn15",
+      "top": -242.2,
+      "left": -19.2,
+      "attrs": { "color": "green", "xray": "1" }
+    },
+    {
+      "type": "chip-brook-retro-board",
+      "id": "chip1",
+      "top": -555.78,
+      "left": -91.2,
+      "attrs": {}
+    }
+  ],
+  "connections": [
+    [ "pico:GP0", "$serialMonitor:RX", "", [] ],
+    [ "pico:GP1", "$serialMonitor:TX", "", [] ],
+    [ "pico:GND.2", "oled1:GND", "black", [ "h0" ] ],
+    [ "pico:GP8", "oled1:VCC", "green", [ "h0" ] ],
+    [ "pico:GP9", "oled1:SCL", "green", [ "h0" ] ]
+  ],
+  "dependencies": {}
+}

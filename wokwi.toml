@@ -1,0 +1,4 @@
+[wokwi]
+version = 1
+firmware = './build/HID_Retro_Converter.hex'
+elf = './build/HID_Retro_Converter.elf'
